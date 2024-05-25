@@ -14,7 +14,7 @@ const Sidebar = () => {
         setIsSidebarOpen(false);
       }
     };
-    
+
     window.addEventListener("resize", handleResize);
     handleResize();
     return () => {
@@ -27,10 +27,10 @@ const Sidebar = () => {
   }
 
   return (
-    <div className="fixed top-0 left-0 bg-slate-50 md:hidden w-full sm:w-[50%] h-full z-50">
+    <div className="fixed top-0 left-0 bg-slate-50 dark:bg-slate-800 md:hidden w-full sm:w-[50%] h-full z-50">
       <div className="relative w-full h-full p-4">
         <IoClose
-          className="absolute top-4 right-4 h-6 w-6 cursor-pointer"
+          className="absolute top-4 right-4 h-6 w-6 cursor-pointer dark:text-white"
           onClick={() => setIsSidebarOpen(false)}
         />
         <div className="flex items-center justify-center mt-5">
